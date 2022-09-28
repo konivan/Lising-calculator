@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Lising calculator</title>
+  <meta name="description" content="Test task">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="main">
+      <div class="main-wrapper container">
+          <h1 class="main-wrapper-title">Рассчитайте стоимость автомобиля в лизинг</h1>
+          <section class="main-wrapper-calculator">
+            <div class="inputs-wrapper">
+              <h2 class="inputs-wrapper-title">
+                Стоимость автомобиля
+              </h2>
+              <div class="inputs-wrapper-inner active">
+                <div class="main-input">
+                  <input type="tel" id="car-price" class="main-input-1" value="1000000">
+                  <span class="input-payload">₽</span>
+                </div>
+                <input type="range" id="car-price-range" class="input-range" value="1000000" min="1000000" max="6000000">
+              </div>
+            </div>
+            <div class="inputs-wrapper">
+              <h2 class="inputs-wrapper-title">
+                Первоначальный взнос
+              </h2>
+              <div class="inputs-wrapper-inner-2 active">
+                <div class="main-input-2">
+                  <input type="tel" id="contribution-sum" class="second-input" value="0">
+                  <div class="second-input-procent"><span id="contribution" class="second-input-procent-span"></span></div>
+                </div>
+                <input type="range" id="contribution-range" class="input-range-2" value="10" min="10" max="60">
+              </div>
+            </div>
+            <div class="inputs-wrapper">
+              <h2 class="inputs-wrapper-title">
+                Срок лизинга
+              </h2>
+              <div class="inputs-wrapper-inner-3 active">
+                <div class="main-input-4">
+                  <input type="tel" id="time" class="thrid-input" value="1">
+                  <span class="thrid-input-span">мес.</span>
+                </div>
+                <input type="range" id="time-range" class="input-range-3" value="1" min="1" max="60">
+              </div>
+            </div>
+          </section>
+          <section class="final-sum-body">
+            <div class="result-sum">
+              <div class="result-sum-1">
+                <h2 class="result-sum-title">Сумма договора лизинга</h2>
+                <div class="result-sum-div"><span id="final-sum">0</span>₽</div>
+              </div>
+              <div class="result-sum-2">
+                <h2 class="price-payment-title">Ежемесячный платеж от</h2>
+                <div class="price-payment-result"><span id="payment-sum">0</span>₽</div>
+              </div>
+            </div>
+            <div class="result-button">
+              <input type="button" id="Btn" value="Оставить заявку">
+            </div>
+          </section>
+      </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
